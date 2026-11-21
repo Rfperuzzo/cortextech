@@ -1,0 +1,108 @@
+<section class="section-space briefing" id="briefing" aria-labelledby="briefing-title">
+  <div class="shell">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow"><i class="light-dot" aria-hidden="true"></i> Briefing interativo</p>
+      <h2 id="briefing-title">Qual é a sua próxima <em>grande ideia?</em></h2>
+      <p class="section-lead">Conte o que você imagina. Nós ajudamos a transformar isso em realidade.</p>
+    </div>
+    <noscript><p class="no-script">Ative o JavaScript para preencher o briefing interativo.</p></noscript>
+    <div class="briefing__body" hidden>
+      <span class="briefing__spark" aria-hidden="true"></span>
+      <div class="briefing__progress">
+        <p data-step-progress aria-live="polite">Etapa 1 de 4</p>
+        <ol aria-label="Etapas do briefing">
+          <li aria-current="step"><span aria-hidden="true"></span> Projeto</li>
+          <li><span aria-hidden="true"></span> Ideia</li>
+          <li><span aria-hidden="true"></span> Forma</li>
+          <li><span aria-hidden="true"></span> Contato</li>
+        </ol>
+        <div class="briefing__rail" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="briefing__grid">
+        <form class="briefing__form" novalidate>
+          <div data-step="0" aria-labelledby="step-one">
+            <h3 id="step-one" tabindex="-1">O que vamos criar juntos?</h3>
+            <fieldset class="choices choices--types">
+              <legend class="visually-hidden">Tipo de projeto</legend>
+              <label><input type="radio" name="type" value="Landing Page" required><span>Landing Page<span class="choice-note">Campanhas e lançamentos</span></span></label>
+              <label><input type="radio" name="type" value="Site Institucional" checked><span>Site Institucional<span class="choice-note">Presença digital para empresas</span></span></label>
+              <label><input type="radio" name="type" value="Loja Virtual"><span>Loja Virtual<span class="choice-note">Catálogo e experiência de compra</span></span></label>
+              <label><input type="radio" name="type" value="Sistema Web"><span>Sistema Web<span class="choice-note">Aplicações sob medida</span></span></label>
+            </fieldset>
+          </div>
+          <div data-step="1" aria-labelledby="step-two" hidden>
+            <h3 id="step-two" tabindex="-1">Toda ideia tem uma história. Qual é a sua?</h3>
+            <div class="fields">
+              <label class="field"><span>Nome da empresa</span><input name="company" autocomplete="organization" required maxlength="100"></label>
+              <label class="field"><span>Ramo de atuação</span><input name="industry" required maxlength="100"></label>
+              <label class="field field--wide"><span>Principal objetivo do site</span>
+                <select name="goal" required><option value="">Escolha um objetivo</option><option>Apresentar minha empresa</option><option>Conseguir novos clientes</option><option>Mostrar meus serviços</option><option>Fortalecer minha marca</option><option>Outro objetivo</option></select>
+              </label>
+              <label class="field field--wide"><span>Descrição da ideia</span><textarea name="idea" rows="4" required maxlength="1600"></textarea></label>
+            </div>
+          </div>
+          <div data-step="2" aria-labelledby="step-three" hidden>
+            <h3 id="step-three" tabindex="-1">Como você imagina o seu site?</h3>
+            <fieldset class="choices choices--chips">
+              <legend>Páginas</legend>
+              <label><input type="checkbox" name="pages" value="Início" checked><span>Início</span></label>
+              <label><input type="checkbox" name="pages" value="Sobre" checked><span>Sobre</span></label>
+              <label><input type="checkbox" name="pages" value="Serviços"><span>Serviços</span></label>
+              <label><input type="checkbox" name="pages" value="Portfólio"><span>Portfólio</span></label>
+              <label><input type="checkbox" name="pages" value="Contato"><span>Contato</span></label>
+              <label><input type="checkbox" name="pages" value="Outras"><span>Outras</span></label>
+            </fieldset>
+            <label class="field conditional-field" data-other="pages" hidden><span>Quais outras páginas? <small>Opcional</small></span><input name="otherPages" maxlength="200"></label>
+            <fieldset class="choices choices--chips">
+              <legend>Funcionalidades</legend>
+              <label><input type="checkbox" name="features" value="Formulário de contato"><span>Formulário de contato</span></label>
+              <label><input type="checkbox" name="features" value="Integração com WhatsApp"><span>Integração com WhatsApp</span></label>
+              <label><input type="checkbox" name="features" value="Galeria"><span>Galeria</span></label>
+              <label><input type="checkbox" name="features" value="Blog"><span>Blog</span></label>
+              <label><input type="checkbox" name="features" value="Agendamentos"><span>Agendamentos</span></label>
+              <label><input type="checkbox" name="features" value="Outras"><span>Outras</span></label>
+            </fieldset>
+            <label class="field conditional-field" data-other="features" hidden><span>Quais outras funcionalidades? <small>Opcional</small></span><input name="otherFeatures" maxlength="200"></label>
+            <div class="fields">
+              <label class="field"><span>Preferência visual</span><select name="style"><option>Minimalista</option><option>Moderno</option><option>Corporativo</option><option>Criativo</option></select></label>
+              <label class="field"><span>Cor de destaque</span><input type="color" name="accent" value="#f2a65a"></label>
+              <label class="field field--wide"><span>Sites de referência <small>Opcional</small></span><textarea name="references" rows="2" maxlength="600" placeholder="Cole os links ou escreva os nomes dos sites."></textarea></label>
+            </div>
+          </div>
+          <div data-step="3" aria-labelledby="step-four" hidden>
+            <h3 id="step-four" tabindex="-1">Vamos tirar do papel?</h3>
+            <div class="fields">
+              <label class="field"><span>Nome do responsável</span><input name="contact" autocomplete="name" required maxlength="100"></label>
+              <label class="field"><span>E-mail</span><input type="email" name="email" autocomplete="email" required maxlength="254"></label>
+              <label class="field"><span>WhatsApp <small>Opcional</small></span><input type="tel" name="phone" autocomplete="tel" maxlength="30" placeholder="(00) 00000-0000"></label>
+              <label class="field"><span>Prazo desejado</span><select name="deadline" required><option value="">Escolha um prazo</option><option>Até 30 dias</option><option>Entre 1 e 3 meses</option><option>Em mais de 3 meses</option><option>A definir</option></select></label>
+              <label class="field field--wide"><span>Faixa de orçamento <small>Opcional</small></span><select name="budget"><option value="">Selecione uma faixa</option><option>Até R$ 3 mil</option><option>R$ 3 mil a R$ 8 mil</option><option>R$ 8 mil a R$ 15 mil</option><option>Acima de R$ 15 mil</option><option>A definir</option></select></label>
+            </div>
+            <label class="consent"><input type="checkbox" name="consent" required><span>Autorizo o contato sobre este projeto pelos canais que informei.</span></label>
+            <div class="review" data-review hidden></div>
+            <p class="briefing__delivery" data-delivery></p>
+          </div>
+          <div class="briefing__actions">
+            <button type="button" class="button" data-back hidden>← Voltar</button>
+            <button type="submit" class="button button--light" data-next>Continuar <span aria-hidden="true">→</span></button>
+            <button type="button" class="button" data-copy hidden>Copiar resumo</button>
+          </div>
+          <p class="form-status" role="status" tabindex="-1"></p>
+          <label class="field" data-manual-copy hidden><span>Resumo para copiar</span><textarea readonly rows="7"></textarea></label>
+        </form>
+        <aside class="briefing__aside" aria-label="Prévia conceitual do projeto">
+          <p class="eyebrow"><i class="light-dot" aria-hidden="true"></i> Prévia conceitual</p>
+          <div class="browser preview">
+            <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span>Identidade do projeto</span></div>
+            <div class="preview__content" data-preview-style="Minimalista">
+              <div class="preview__meta"><span data-preview-name>Sua marca</span><span data-preview-type>Site Institucional</span></div>
+              <div class="preview__hero"><strong data-preview-lead>Sua marca</strong><i aria-hidden="true"></i></div>
+              <ul class="preview__pages" data-preview-pages aria-label="Páginas selecionadas"></ul>
+            </div>
+          </div>
+          <p>A composição reage às suas escolhas e ajuda a visualizar a direção do projeto.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>

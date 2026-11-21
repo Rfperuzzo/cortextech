@@ -1,0 +1,78 @@
+.story { position: relative; isolation: isolate; }
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: max(620px, calc(100svh - 86px));
+  padding-block: clamp(56px, 8vh, 104px) 0;
+  background: radial-gradient(ellipse at 72% 45%, #332117 0, #1c1612 29%, transparent 59%), linear-gradient(var(--top), var(--bg));
+}
+.hero__grid { display: grid; grid-template-columns: 1fr 1.14fr; align-items: center; flex: 1; padding-bottom: clamp(34px, 5vh, 70px); }
+.hero__copy { position: relative; z-index: 3; }
+.hero__copy .eyebrow { color: var(--accent); }
+.hero h1 { margin-block: 1.4rem 1.7rem; font-size: clamp(3.6rem, 6.15vw, 6.5rem); text-wrap: initial; }
+.hero__lead { max-width: 37ch; color: #bab1a8; font-size: clamp(1rem, 1.36vw, 1.13rem); margin-bottom: 1.65rem; }
+.hero__word { position: absolute; inset: auto 0 9%; color: rgba(229, 200, 178, .043); font-size: min(25.2vw, 405px); font-weight: 630; line-height: .85; letter-spacing: -.069em; text-align: center; pointer-events: none; user-select: none; overflow: clip; }
+.hero__visual, .connections__visual { position: relative; min-width: 0; aspect-ratio: 1.38; }
+.hero__visual { align-self: center; margin-left: -5%; }
+.brain-poster, .brain-halo, .brain-target { position: absolute; inset: 0; }
+.brain-poster img { width: 100%; height: 100%; object-fit: contain; }
+.brain-poster { transition: opacity .6s var(--ease); }
+.brain-halo { inset: 10%; background: radial-gradient(ellipse, #73412048, transparent 65%); pointer-events: none; }
+.hero__visual .brain-halo::before, .hero__visual .brain-halo::after { content: ''; position: absolute; inset: 6% 12%; border: 1px solid #caa48418; border-radius: 50%; }
+.hero__visual .brain-halo::after { inset: -4% 3%; border-style: dashed; border-color: #d5a88414; }
+.has-brain .brain-poster { opacity: 0; }
+.brain-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; opacity: 0; }
+.has-brain .brain-canvas { opacity: 1; transition: opacity .6s var(--ease); }
+.brain-target { z-index: 3; inset: 5% 4% 10%; touch-action: pan-y pinch-zoom; }
+.has-brain .brain-target { cursor: grab; }
+.has-brain .brain-target.dragging { cursor: grabbing; user-select: none; }
+.brain-controls { position: absolute; z-index: 4; inset: auto 0 -2%; display: flex; gap: .4rem; align-items: center; justify-content: center; color: var(--muted); font: .67rem var(--mono); text-transform: uppercase; letter-spacing: .09em; }
+.brain-controls button { display: grid; place-items: center; width: 44px; height: 44px; border: 0; background: transparent; color: var(--muted); font: 1.4rem var(--sans); }
+.brain-controls button:hover { color: var(--accent); }
+[data-brain-source] { position: absolute; top: 54%; left: 64%; }
+.hero__bottom { display: flex; justify-content: space-between; gap: 12px; align-items: center; position: relative; z-index: 3; border-top: 1px solid var(--line); min-height: 64px; color: var(--muted); font: .69rem/1.4 var(--mono); text-transform: uppercase; letter-spacing: .12em; }
+.hero__down { display: inline-flex; min-height: 44px; align-items: center; gap: .85rem; }
+.hero__down:hover, .hero__down span { color: var(--accent); }
+.hero__bottom i { display: inline-block; width: 3px; height: 3px; margin: 0 .45rem .16rem; background: var(--accent); border-radius: 50%; }
+.connections { position: relative; border-bottom: 1px solid var(--line); background: radial-gradient(ellipse at 20% 62%, #1e1712, transparent 50%); }
+.connections__grid { display: grid; grid-template-columns: 1.14fr 1fr; align-items: center; gap: 6vw; margin-top: clamp(26px, 6vw, 92px); }
+.connections__visual { margin-left: -7%; }
+.connections .section-heading, .pillars { position: relative; z-index: 3; }
+.pillars { list-style: none; }
+.pillars li { display: grid; grid-template-columns: 8px 1fr; gap: .2rem 1rem; padding-block: clamp(17px, 2.5vw, 32px); border-top: 1px solid var(--line); }
+.pillars li:last-child { border-bottom: 1px solid var(--line); }
+.pillar-dot { align-self: center; width: 7px; height: 7px; border: 1px solid var(--muted); border-radius: 50%; }
+.pillars .is-active .pillar-dot { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 14px var(--accent); }
+.pillars h3 { font-size: clamp(1.3rem, 2.5vw, 2.45rem); font-weight: 500; line-height: 1.05; letter-spacing: -.05em; }
+.pillars p { grid-column: 2; max-width: 37ch; color: var(--muted); }
+.travel-spark { position: fixed; z-index: 5; inset: 0 auto auto 0; width: 8px; height: 8px; opacity: 0; border-radius: 50%; pointer-events: none; background: var(--glow); box-shadow: 0 0 8px 3px var(--accent), 0 0 30px 8px #f2a65a66; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__copy > * { animation: hero-in .8s var(--ease) both; }
+  .hero__copy h1 { animation-delay: .06s; }
+  .hero__lead { animation-delay: .14s; }
+  .hero__copy .actions { animation-delay: .23s; }
+  @keyframes hero-in { from { opacity: 0; transform: translateY(16px); } }
+}
+@media (max-width: 900px) { .hero h1 { font-size: clamp(3.25rem, 6.8vw, 6.2rem); } }
+@media (max-width: 760px) {
+  .hero { min-height: auto; padding-top: clamp(45px, 8vw, 64px); background: radial-gradient(ellipse at 55% 75%, #352317, transparent 51%), linear-gradient(var(--top), var(--bg)); }
+  .hero__grid { grid-template-columns: 1fr; padding-bottom: 24px; }
+  .hero h1 { font-size: clamp(2.46rem, 10.2vw, 5.1rem); margin-block: 1rem 1.35rem; }
+  .hero h1 em { font-size: 1.08em; white-space: nowrap; }
+  .hero__break { display: none; }
+  .hero__lead { margin-bottom: 1.1rem; }
+  .hero__visual { width: min(100% + 26px, 550px); margin: 10px 0 4px; justify-self: center; }
+  .hero__word { bottom: 15%; }
+  .hero__bottom { min-height: 52px; }
+  .hero__bottom > span { display: none; }
+  .connections__grid { grid-template-columns: 1fr; gap: 24px; }
+  .connections__visual { width: min(100%, 520px); margin: 0; justify-self: center; }
+}
+@media (max-width: 365px) {
+  .hero__break { display: initial; }
+  .hero .actions { gap: .25rem .85rem; }
+  .hero .actions a { font-size: .8rem; }
+}

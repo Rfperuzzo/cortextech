@@ -1,0 +1,20 @@
+:root {
+  color-scheme: dark;
+  --bg: #0e0d0c;
+  --top: #161412;
+  --end: #0c0b0a;
+  --graphite: #24211f;
+  --text: #f2ede6;
+  --muted: #a39d96;
+  --accent: #f2a65a;
+  --glow: #ffd9a9;
+  --error: #ffad9a;
+  --line: #37312d;
+  --strong-line: #5e5550;
+  --sans: 'Archivo Variable', Archivo, system-ui, sans-serif;
+  --serif: 'Instrument Serif', Georgia, serif;
+  --mono: ui-monospace, 'Cascadia Code', monospace;
+  --gutter: clamp(20px, 5.15vw, 88px);
+  --space: clamp(78px, 10.3vw, 162px);
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}

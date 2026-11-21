@@ -1,0 +1,16 @@
+# Créditos de mídia
+
+- `public/media/brain.glb` — [Brain, Innerscene](https://www.innerscene.com/tools/library/3d-parts/brain-10d8f88f), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). A malha original foi mantida. Texturas, UVs e materiais originais foram removidos e substituídos pelo acabamento grafite da CortexTech. O arquivo baixou de 4.650.492 para 261.700 bytes. `brain-poster.webp` é uma renderização da cena da CortexTech com a mesma malha.
+- `public/media/forma.webp` e `public/media/vertice.webp` — imagens originais geradas pela ferramenta integrada de imagens da OpenAI para projetos fictícios. Foram codificadas localmente em WebP.
+- Archivo Variable, por Omnibus-Type, e Instrument Serif, por Instrument e Rodrigo Fuenzalida — distribuídas por Fontsource sob [SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/). As licenças acompanham as dependências npm.
+- Marca CortexTech, layouts e mockups — produzidos para este projeto.
+
+## Prompts de imagem
+
+### Forma Estúdio
+
+> Photorealistic horizontal editorial architectural photography for a fictional architecture studio portfolio. Sculptural modern Brazilian residence in pale sand travertine and exposed concrete, dramatic monolithic overhang and floor-to-ceiling windows; late afternoon light, soft shadows, one olive tree, warm neutral and charcoal palette, photographed from below through courtyard. Contemporary architecture magazine, real materials, large forms, composition readable at small scale. No people, no text, no graphics, no watermark. 3:2 landscape.
+
+### Vértice
+
+> Horizontal photorealistic campaign photography for a fictitious trail-running brand. Lone runner from behind, wearing a muted electric-lime windbreaker, navigating a dark volcanic ridge, layered desaturated olive mountains, strong grain and a cinematic overcast sky. Subject on right third, spacious composition, editorial outdoor sports campaign, tactile rocks, motion and altitude. No text or branding, no watermark. 3:2 landscape.
