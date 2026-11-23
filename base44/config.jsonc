@@ -1,0 +1,9 @@
+{
+  "name": "cortextech",
+  "description": "Site institucional da CortexTech",
+  "visibility": "public",
+  "site": {
+    "buildCommand": "npm run build",
+    "outputDirectory": "./dist"
+  }
+}
