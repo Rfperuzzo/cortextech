@@ -73,9 +73,9 @@ test('em celular o menu funciona por teclado e as seções não criam rolagem la
   await expect(menu).toBeFocused();
   await menu.click();
   await panel.getByRole('link', { name: 'Contato' }).click();
-  await expect(page).toHaveURL(/#briefing$/);
+  await expect(page).toHaveURL(/#contato$/);
   await expect(panel).toBeHidden();
-  await expect(page.locator('#briefing')).toBeFocused();
+  await expect(page.locator('#contato')).toBeFocused();
   for (const width of [320, 375, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: width < 768 ? 667 : 850 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(width);
@@ -113,7 +113,7 @@ test('valida etapas, atualiza a prévia, edita o resumo e conclui a demonstraç�
   await page.getByRole('button', { name: 'Continuar' }).click();
   await expect(page.getByText('Modo demonstração.', { exact: false })).toBeVisible();
   await page.getByRole('button', { name: 'Copiar resumo' }).click();
-  await expect(page.getByRole('status')).toHaveText('Resumo copiado.');
+  await expect(page.locator('#briefing').getByRole('status')).toHaveText('Resumo copiado.');
   const text = await page.evaluate(() => navigator.clipboard.readText());
   expect(text).toContain('Cor de destaque: #50ad87');
   expect(text).toContain('WhatsApp: (11) 98765-4321');
@@ -134,13 +134,13 @@ test('envio configurado exibe falha e confirma recebimento só depois do aceite'
   await fillContact(page);
   const send = page.getByRole('button', { name: 'Enviar briefing' });
   await send.click();
-  await expect(page.getByRole('status')).toContainText('O recebimento não foi confirmado.');
+  await expect(page.locator('#briefing').getByRole('status')).toContainText('O recebimento não foi confirmado.');
   await send.click();
-  await expect(page.getByRole('status')).toContainText('Briefing enviado.');
+  await expect(page.locator('#briefing').getByRole('status')).toContainText('Briefing enviado.');
   expect(attempts[0]).toEqual(attempts[1]);
   expect(attempts[1]).toMatchObject({ company: 'Estúdio Mosaico', email: 'demo@example.com', consent: true });
   await send.click();
-  await expect(page.getByRole('status')).toHaveText('Este briefing já foi enviado.');
+  await expect(page.locator('#briefing').getByRole('status')).toHaveText('Este briefing já foi enviado.');
   expect(attempts).toHaveLength(2);
 });
 

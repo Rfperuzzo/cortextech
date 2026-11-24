@@ -14,3 +14,7 @@
 ### Vértice
 
 > Horizontal photorealistic campaign photography for a fictitious trail-running brand. Lone runner from behind, wearing a muted electric-lime windbreaker, navigating a dark volcanic ridge, layered desaturated olive mountains, strong grain and a cinematic overcast sky. Subject on right third, spacious composition, editorial outdoor sports campaign, tactile rocks, motion and altitude. No text or branding, no watermark. 3:2 landscape.
+
+## Retratos da equipe
+
+As dez imagens em `public/media/equipe/` foram reaproveitadas da galeria do [site anterior da CortexTech](https://cortex-tech-flow.base44.app/#equipe) conforme solicitado. A correspondência entre os perfis e os retratos segue a galeria publicada. As imagens foram otimizadas em WebP e a galeria identifica o uso de retratos ilustrativos.

@@ -1,0 +1,40 @@
+<section class="section-space contact" id="contato" aria-labelledby="contact-title">
+  <div class="shell contact__grid">
+    <div class="section-heading" data-reveal>
+      <p class="eyebrow"><i class="light-dot" aria-hidden="true"></i> Contato</p>
+      <h2 id="contact-title">Vamos conversar <em>sobre seu projeto.</em></h2>
+      <p class="section-lead">Conte o que você quer construir, o que precisa melhorar ou qual desafio quer resolver. A partir daí, podemos definir os próximos passos.</p>
+      <div class="contact__channel">
+        <p class="eyebrow">E-mail oficial</p>
+        <div class="contact__channel-row">
+          <a class="contact__email" href="mailto:cortextechfloripa@gmail.com">cortextechfloripa@gmail.com</a>
+          <button class="button contact__copy" type="button" hidden>Copiar e-mail</button>
+        </div>
+        <p class="contact__status" role="status"></p>
+      </div>
+      <a class="text-link contact__briefing" href="#briefing">Preencher o briefing completo <span aria-hidden="true">↗</span></a>
+    </div>
+    <form class="contact__form" aria-labelledby="contact-form-title" hidden>
+      <h3 id="contact-form-title">Conte o que você precisa</h3>
+      <div class="fields">
+        <label class="field"><span>Seu nome</span><input name="name" autocomplete="name" required maxlength="120"></label>
+        <label class="field"><span>Empresa <small>Opcional</small></span><input name="company" autocomplete="organization" maxlength="120"></label>
+        <label class="field field--wide"><span>Seu e-mail</span><input name="email" type="email" autocomplete="email" required maxlength="254"></label>
+        <label class="field field--wide"><span>Serviço de interesse</span>
+          <select name="service" required>
+            <option value="">Selecione um serviço</option>
+            <option>Landing page</option>
+            <option>Site institucional</option>
+            <option>Loja virtual</option>
+            <option>Sistema web</option>
+            <option>Ainda estou definindo</option>
+          </select>
+        </label>
+        <label class="field field--wide"><span>Sobre o projeto</span><textarea name="message" rows="4" required maxlength="800" placeholder="O que você quer tirar do papel?"></textarea></label>
+      </div>
+      <button type="submit" class="button button--light contact__submit" aria-describedby="contact-delivery">Abrir no e-mail <span aria-hidden="true">↗</span></button>
+      <p class="contact__hint" id="contact-delivery">O formulário prepara um rascunho para você revisar e enviar no seu aplicativo de e-mail.</p>
+      <a class="text-link" data-draft hidden>Reabrir rascunho <span aria-hidden="true">↗</span></a>
+    </form>
+  </div>
+</section>

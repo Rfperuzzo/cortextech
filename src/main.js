@@ -1,5 +1,7 @@
 import { setupMotion } from './motion/narrative.js';
 import { setupBriefing } from './briefing/form.js';
+import { setupContact } from './contact.js';
+import { setupTeam } from './team.js';
 
 const header = document.querySelector('.header');
 const toggle = header.querySelector('.menu-toggle');
@@ -33,4 +35,6 @@ header.addEventListener('keydown', event => {
 mobile.addEventListener('change', () => openMenu(false));
 
 setupBriefing();
+setupContact();
+setupTeam();
 setupMotion();

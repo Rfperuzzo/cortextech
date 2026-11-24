@@ -1,6 +1,6 @@
 # CortexTech
 
-**Da ideia ao digital.** Site de um estúdio fictício de estratégia, design e desenvolvimento web sob medida. A landing conduz da primeira conexão neural a uma interface e a um briefing de projeto.
+**Da ideia ao digital.** Site de um estúdio de estratégia, design e desenvolvimento web sob medida. A landing conduz da primeira conexão neural a uma interface e a um briefing de projeto.
 
 ## Executar localmente
 
@@ -22,13 +22,17 @@ O build fica em `dist/` e usa caminhos relativos para funcionar também em uma s
 
 ## O que está implementado
 
-- Landing responsiva com hero, pilares do estúdio, transição de wireframe para interface, serviços, processo, dois projetos-conceito, briefing e fechamento.
+- Landing responsiva com hero, pilares do estúdio, transição de wireframe para interface, serviços, processo, dois projetos-conceito, galeria de equipe, briefing, contato e fechamento.
 - Cérebro anatômico em GLB com material grafite, luzes em Three.js, arrasto por mouse e dedo e controles por teclado. O movimento reage à seção e acende grupos de conexões durante a apresentação dos pilares. Uma partícula sai da região do cérebro em direção à interface.
 - Cena carregada de forma assíncrona, com densidade de pixels limitada. Uma imagem WebP entra em caso de ausência de WebGL, erro no modelo ou preferência por movimento reduzido. Em telas de toque, a rolagem vertical permanece nativa. Lenis suaviza a roda quando há ponteiro fino.
 - Briefing em quatro etapas com validação, resumo editável e prévia conceitual sensível a empresa, tipo de projeto, páginas, estilo e cor. Os dados ficam na página até que o visitante copie o resumo ou peça o envio ao serviço configurado.
 - A seleção de um serviço abre o briefing com o tipo correspondente. A animação marca o avanço e responde ao preenchimento.
 
-## Configurar o envio
+## Contato
+
+A seção **Contato** exibe o e-mail oficial e permite copiá-lo. O formulário monta um rascunho no aplicativo de e-mail do visitante para que ele revise e envie a mensagem.
+
+## Configurar o envio do briefing
 
 O modo padrão oferece **Copiar resumo**. Se o navegador bloquear o clipboard, o formulário mostra o texto selecionável.
 
