@@ -36,6 +36,7 @@
 .service-list a > span { display: grid; place-items: center; width: 45px; height: 45px; border: 1px solid var(--strong-line); border-radius: 50%; color: var(--accent); transition: background .25s, color .25s; }
 .service-list a:hover, .service-list a:focus-visible { padding-inline: clamp(8px, 1.65vw, 24px); background: #ffffff04; }
 .service-list a:hover > span, .service-list a:focus-visible > span { background: var(--text); color: var(--bg); }
+.service-list__campaign h3 { color: var(--glow); }
 
 .process__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 9vw, 125px); }
 .process .section-heading { align-self: start; }

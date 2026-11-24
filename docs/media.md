@@ -15,6 +15,12 @@
 
 > Horizontal photorealistic campaign photography for a fictitious trail-running brand. Lone runner from behind, wearing a muted electric-lime windbreaker, navigating a dark volcanic ridge, layered desaturated olive mountains, strong grain and a cinematic overcast sky. Subject on right third, spacious composition, editorial outdoor sports campaign, tactile rocks, motion and altitude. No text or branding, no watermark. 3:2 landscape.
 
+### Campanha de móveis planejados
+
+A imagem `public/media/campanha-moveis.webp` foi gerada com a ferramenta integrada de imagens da OpenAI e codificada localmente em WebP.
+
+> Photorealistic editorial interior photography for a concept advertising campaign for bespoke furniture in Florianópolis, Brazil. A thoughtfully designed modern kitchen with custom natural walnut cabinetry, pale limestone island, small ribbed wood details, brushed brass accents and soft afternoon sun. A single ceramic bowl with a few green pears and tasteful interior styling. Framing from counter height, warm tactile materials, sculptural but actually inhabitable, restrained Brazilian contemporary interior design. Premium architecture magazine photography, no people, no text, no logo, no graphics. Landscape 3:2 composition, hero cabinetry and island remain recognizable in a center square crop.
+
 ## Retratos da equipe
 
 As dez imagens em `public/media/equipe/` foram reaproveitadas da galeria do [site anterior da CortexTech](https://cortex-tech-flow.base44.app/#equipe) conforme solicitado. A correspondência entre os perfis e os retratos segue a galeria publicada. As imagens foram otimizadas em WebP e a galeria identifica o uso de retratos ilustrativos.

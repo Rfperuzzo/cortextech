@@ -5,10 +5,18 @@ export function setupContact() {
   const status = section.querySelector('.contact__status');
   const form = section.querySelector('.contact__form');
   const draft = section.querySelector('[data-draft]');
+  const service = form.elements.namedItem('service');
   const address = email.textContent.trim();
 
   copy.hidden = false;
   form.hidden = false;
+  document.querySelectorAll('[data-contact-service]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      service.value = link.dataset.contactService;
+      draft.hidden = true;
+    });
+  });
   copy.addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(address);

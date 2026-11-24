@@ -22,7 +22,7 @@ O build fica em `dist/` e usa caminhos relativos para funcionar também em uma s
 
 ## O que está implementado
 
-- Landing responsiva com hero, pilares do estúdio, transição de wireframe para interface, serviços, processo, dois projetos-conceito, galeria de equipe, briefing, contato e fechamento.
+- Landing responsiva com hero, pilares do estúdio, transição de wireframe para interface, serviços, vitrine de Marketing Digital, processo, dois projetos-conceito, galeria de equipe, briefing, contato e fechamento.
 - Cérebro anatômico em GLB com material grafite, luzes em Three.js, arrasto por mouse e dedo e controles por teclado. O movimento reage à seção e acende grupos de conexões durante a apresentação dos pilares. Uma partícula sai da região do cérebro em direção à interface.
 - Cena carregada de forma assíncrona, com densidade de pixels limitada. Uma imagem WebP entra em caso de ausência de WebGL, erro no modelo ou preferência por movimento reduzido. Em telas de toque, a rolagem vertical permanece nativa. Lenis suaviza a roda quando há ponteiro fino.
 - Briefing em quatro etapas com validação, resumo editável e prévia conceitual sensível a empresa, tipo de projeto, páginas, estilo e cor. Os dados ficam na página até que o visitante copie o resumo ou peça o envio ao serviço configurado.
@@ -30,7 +30,7 @@ O build fica em `dist/` e usa caminhos relativos para funcionar também em uma s
 
 ## Contato
 
-A seção **Contato** exibe o e-mail oficial e permite copiá-lo. O formulário monta um rascunho no aplicativo de e-mail do visitante para que ele revise e envie a mensagem.
+A seção **Contato** exibe o e-mail oficial e permite copiá-lo. Os links de Marketing Digital já selecionam esse serviço no formulário. O formulário monta um rascunho no aplicativo de e-mail do visitante para que ele revise e envie a mensagem.
 
 ## Configurar o envio do briefing
 
